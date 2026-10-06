@@ -1,0 +1,21 @@
+{
+  "name": "mlh-hacktoberfest-26",
+  "version": "1.0.0",
+  "description": "workshop stuff",
+  "homepage": "https://github.com/not-fritos/mlh-hacktoberfest-26#readme",
+  "bugs": {
+    "url": "https://github.com/not-fritos/mlh-hacktoberfest-26/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/not-fritos/mlh-hacktoberfest-26.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {}
+}

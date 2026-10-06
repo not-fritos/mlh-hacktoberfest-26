@@ -1,0 +1,39 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": "allow",
+    "edit": "ask",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "task": "ask",
+    "bash": {
+      "git *": "allow",
+      "npm *": "allow",
+      "npx *": "ask",
+      "pnpm *": "ask",
+      "yarn *": "ask",
+      "cd *": "allow",
+      "ls *": "allow",
+      "cat *": "allow",
+      "echo *": "allow",
+      "mkdir *": "allow",
+      "touch *": "allow",
+      "rm -rf node_modules": "deny",
+      "rm -rf .git": "deny",
+      "*": "ask"
+    },
+    "webfetch": "ask",
+    "websearch": "ask",
+    "external_directory": "ask",
+    "todowrite": "ask",
+    "question": "allow"
+  },
+  "mcp": {
+    "githubcopilot": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true
+    }
+  }
+}
