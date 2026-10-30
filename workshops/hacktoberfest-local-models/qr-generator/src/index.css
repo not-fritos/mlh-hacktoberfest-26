@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Terminal-like aesthetic: Dark background, mono font, neon green glow */
+
+:root {
+  --color-text-primary: #64ffda; /* Bright green for main text */
+  --color-background: #111827; /* Dark background */
+  --color-border: #00ff00;    /* Neon border */
+  --font-mono: 'Space Mono', monospace;
+}
+
+body {
+  /* Enforce the terminal look */
+  @apply bg-black font-mono text-[#64ffda];
+}
+
+.terminal-wrapper {
+  /* Main container mimicking a console window */
+  min-height: 100vh;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); /* Intense neon glow */
+  border: 3px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between components */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Generic styling for code blocks to look like terminal output */
+code, .code-snippet {
+  @apply bg-gray-900 border border-lime-500 px-3 py-1 rounded text-sm;
+}
